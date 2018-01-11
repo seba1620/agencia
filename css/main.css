@@ -5,32 +5,30 @@
    ========================================================================== */
 
 #header{
-   background: url(../images/fondologo.jpg) no-repeat center center fixed; 
+   background: url(../images/fondologo.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
 }
 .container{
-    color:red;
     text-align:center;
-    border-color:white;    
-    
+    border-color:white;
+
 }
 
 #title:hover{
     color:red;
 }
 
+.modal-header{
+  background-color: #333;
+  color:white;
+}
+.modal-body{
+  background-color:#6060da21;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.cruz{
+  background: white !important;
+}
