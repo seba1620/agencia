@@ -5,11 +5,11 @@
    ========================================================================== */
 
 #header{
-   background: url(../images/fondologo.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    background: url(../images/fondologo.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .container{
     text-align:center;
@@ -22,26 +22,41 @@ background-size: cover;
 }
 
 .modal-header{
-  background-color: #333;
-  color:white;
+    background-color: #333;
+    color:white;
 }
 .modal-body{
-  background-color:#6060da21;
+    background-color:#6060da21;
 }
 
 .cruz{
-  background: white !important;
+    background: white !important;
 }
 
 #mivideo{ 
-    position: absolute; 
-    bottom: 0px; 
-    right: 0px; 
-    min-width: 100%; 
-    min-height: 100%; 
-    width: auto; 
-    height: auto; 
-    z-index: -1000; 
-    overflow: hidden;     
-   
+    /* position: absolute; 
+     bottom: 0px; 
+     right: 0px; 
+     min-width: 100%; 
+     min-height: 100%; 
+     width: auto; 
+     height: auto; 
+     z-index: -1000; 
+     overflow: hidden;    */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+
+.container h2{
+    color:red;
+    border-color:white;
 }
