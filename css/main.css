@@ -18,7 +18,8 @@
 }
 
 #title:hover{
-    color:red;
+    font-size:120px;
+    color:white;
 }
 
 .modal-header{
@@ -54,7 +55,6 @@
     transform: translateX(-50%) translateY(-50%);
 
 }
-
 
 .container h2{
     color:red;
