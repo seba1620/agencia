@@ -1,8 +1,16 @@
 
 
 /* ==========================================================================
-   Author's custom styles
+   Agencia de viajeas Sebas y Dani 1.0V
    ========================================================================== */
+   body{
+     font-family: "Work Sans", Arial, sans-serif;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.7;
+     color: #828282;
+     background: #fff;
+   }
 
 #header{
     background: url(../images/fondologo.jpg) no-repeat center center fixed;
@@ -11,11 +19,12 @@
     -o-background-size: cover;
     background-size: cover;
 }
+
 .container{
     text-align:center;
     border-color:white;
-
 }
+/* Index View */
 
 #title:hover{
     font-size:120px;
@@ -34,15 +43,15 @@
     background: white !important;
 }
 
-#mivideo{ 
-    /* position: absolute; 
-     bottom: 0px; 
-     right: 0px; 
-     min-width: 100%; 
-     min-height: 100%; 
-     width: auto; 
-     height: auto; 
-     z-index: -1000; 
+#mivideo{
+    /* position: absolute;
+     bottom: 0px;
+     right: 0px;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+     z-index: -1000;
      overflow: hidden;    */
     position: fixed;
     top: 50%;
@@ -59,4 +68,77 @@
 .container h2{
     color:red;
     border-color:white;
+}
+
+/* ============= Destination view =======================*/
+#bg-header {
+      background-image: url(../images/bahamas/header-bg.jpg);
+      height: 50%;
+      padding-top: 360px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.destination-bg-section {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.destination-heading span {
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.destination-heading h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #000;
+}
+.destination p{
+  text-align: justify;
+}
+
+.read-more{
+    text-align: center !important;
+}
+.photo-place {
+    height: 200px;
+    margin-bottom: 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Video section */
+.video-bg-section {
+  background-image: url(../images/bahamas/video-bg.jpg);
+  height: 30%;
+  padding-top: 50px;
+  padding-left: 150px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
 }
