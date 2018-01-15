@@ -88,7 +88,7 @@
               </div>
             </div>
 
-      			<div class="row destination-bg-section">
+      			<div class="row destination">
               	<h3>DESCUBRE BAHAMAS</h3>
                 <hr>
       				<div class="col-md-4 col-sm-4 ">
@@ -113,11 +113,12 @@
                   <hr>
                   <p>
                     Comience la mañana con un tour de medio día en Freeport paseando por las cascadas y senderos en el Jardín de Groves. Continúe por el hogar de los millonarios y de celebridades internacionales de la isla. A continuación, compre en los mercados locales o visite la única destilería de la isla. Cualquier viaje a la ciudad debe incluir una visita a las Bahamas East End y el Parque Nacional de Lucaya, el hogar de uno de los sistemas de cuevas submarinas más grandes del mundo. </p>
+
                 </div>
               </div>
 
               <div class="col-md-4 col-sm-4 ">
-                <div class="feature-center">
+                <div class="feature-center ">
                   <div class="photo-place" style="background-image:url('images/bahamas/nasau.jpg');">
                   </div>
                   <h3>Nassau</h3>
@@ -125,42 +126,42 @@
                   <p>
                   Nassau es la capital de la Commonwealth de las Bahamas. En su primer día familiarícese con el encanto de la ciudad a través del tour de la Ciudad y el País que combinado explora la zona del centro histórico, así como el campo, e incluye un almuerzo de Bahamas. Visite en la isla sus muchas fortalezas y antiguos bastiones piratas, la pintoresca plaza del parlamento y la Corte Suprema.
                   </p>
+
                 </div>
               </div>
       			</div>
 
 
-            <div class=" row list-bg">
-              <h1>Lista de Actividades</h1>
-              <hr>
-              <div class="col-md-4 col-md-offset-2 ">
-                  <ul>
-                    <li>Buceo</li>
-                    <li>Nadar con los delfines</li>
-                    <li>Golf</li>
-                    <li>Festivales</li>
-                    <li>Vuelos privados</li>
-                    <li>Playa</li>
-                  </ul>
-              </div>
-              <div class="col-md-4 col-md-offset-2 ">
-                <ul>
-                  <li>Otros ocios</li>
-                  <li>Cultura</li>
-                  <li>Actividades acuáticas</li>
-                  <li>Pesca</li>
-                  <li>Actividades al aire libre</li>
-                  <li>Boda</li>
-                </ul>
-              </div>
-            </div>
+          <div class=" row list-bg">
+            <h3>Nassau</h3>
 
-      <footer>
-        <div class="row">
-          <div class="col-md-12">
-            <p style="border-radius: length ;">Empresa Dani y Seba. &copy; Company 2018</p>
+            <div class="col-md-4 col-md-offset-2 text-center">
+                <ol>
+                  <li>Buceo</li>
+                  <li>Nadar con los delfines</li>
+                  <li>Golf</li>
+                  <li>Festivales</li>
+                </ol>
+            <div>
+            <div class="col-md-4 col-md-offset-2 text-center">
+              <ol>
+                <li>Otros ocios</li>
+                <li>Cultura</li>
+                <li>Actividades acuáticas</li>
+                <li>Pesca</li>
+              </ol>
+            <div>
+            <div class="col-md-4 col-md-offset-2 text-center">
+              <ol>
+                <li>Actividades al aire libre</li>
+                <li>Boda</li>
+                <li>Vuelos privados</li>
+                <li>Playa</li>
+              </ol>
+            <div>
           </div>
-        </div>
+      <footer>
+        <p style="border-radius: length ;">Empresa Dani y Seba. &copy; Company 2018</p>
       </footer>
     </div> <!-- /container -->
         <script src="js/main.js"></script>
