@@ -149,3 +149,11 @@
 footer{
       background-color: #f5f5f5;
 }
+
+.textos{
+    color:black;
+}
+
+textarea{
+    resize:none;
+}
