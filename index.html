@@ -63,7 +63,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron" id="header">
       <div class="container">
-        <h1 id="title" style="color:red;font-weight:bolder ">Compra tu viaje!</h1>
+        <h1 id="titulo" style="color:red;font-weight:bolder; ">Compra tu viaje!</h1>
         <p style="color:red; font-weight:bolder;">En esta página podrás solicitar tu viaje más deseado.</p>
         <p>
           <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal">
@@ -111,7 +111,7 @@
                       <label class="control-label col-sm-2" for="name">Nombre:</label>
 
                       <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="Introduzca su Nombre" name="name">
+                        <input type="email" class="form-control" id="nombre" placeholder="Introduzca su Nombre" name="name">
                       </div>
                     </div>
 
@@ -119,7 +119,7 @@
                       <label class="control-label col-sm-2" for="surname">Apellidos:</label>
 
                       <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="Introduzca sus Apellidos" name="surname">
+                        <input type="email" class="form-control" id="apellido" placeholder="Introduzca sus Apellidos" name="surname">
                       </div>
                     </div>
 
@@ -127,7 +127,7 @@
                       <label class="control-label col-sm-2" for="personal-id">DNI:</label>
 
                       <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="Introduzca su DNI" name="personal-id">
+                        <input type="email" class="form-control" id="dni" placeholder="Introduzca su DNI" name="personal-id">
                       </div>
                     </div>
 
@@ -135,7 +135,7 @@
                       <label class="control-label col-sm-2" for="personal-id">Dirección:</label>
 
                       <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="Introduzca su Dirección" name="address">
+                        <input type="email" class="form-control" id="direccion" placeholder="Introduzca su Dirección" name="address">
                       </div>
                     </div>
 
@@ -155,8 +155,13 @@
                     </div>
 
                     <div class="form-group">
+                        <script>
+                            function registroOk(){
+                                window.alert("Registro OK");
+                            }
+                        </script>
                       <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-success">Registrarse</button>
+                          <button onclick="registroOk()" type="submit" class="btn btn-success">Registrarse</button>
                       </div>
                     </div>
                   </form>
@@ -166,7 +171,7 @@
         </div>
       </section>
       <footer>
-        <p style="border-radius: length ;">Empresa Dani y Seba. &copy; Company 2018</p>
+        <p style="border-radius: length;">Empresa Dani y Seba. &copy; Company 2018</p>
       </footer>
     </div> <!-- /container -->
         <script src="js/main.js"></script>

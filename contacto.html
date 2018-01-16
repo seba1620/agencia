@@ -27,7 +27,7 @@
 
     </head>
     <body>
-        <video id="mivideo" autoplay="autoplay" loop="loop" preload="auto">
+        <video controls muted id="mivideo" autoplay="autoplay" loop="loop" preload="auto">
             <source src="videos/AirplaneFootage.mp4" type="video/ogg">
         </video>
         <!--[if lt IE 8]>
@@ -74,7 +74,7 @@
                 <div class="col-md-4 col-md-offset-2">
                     <form>
                         <div class="form-group">
-                            <label for="name1" class="textos">Nombre:</label>
+                            <span class="label label-default" id="formTexto">Nombre y apellido</span>
                             <input type="text" class="form-control" id="name1" name="name" placeholder="Nombre">
                         </div>
 
@@ -82,18 +82,18 @@
 
                     <form>
                         <div class="form-group">
-                            <label for="name1" class="textos">Email:</label>
-                            <input type="text" class="form-control" id="email1" name="email" placeholder="Email">
+                            <span class="label label-default" id="formTexto">Email</span>
+                            
+                            <input type="text" class="form-control" id="emai1" name="email" placeholder="Email">
                         </div>
 
                     </form>
                     
                     <form>
                         <div class="form-group">
-                            <label for="name1" class="textos">Asunto:</label>
-                            <textarea style="resize:none;"></textarea>
+                            <span class="label label-default" id="formTexto">Asunto</span>                            
                         </div>
-
+                        <textarea placeholder="Ingrese su mensaje aquí" style="resize:none;width:450px;height:130px;"></textarea>
                     </form>
 
                     <form> 
@@ -102,7 +102,7 @@
                                 window.alert("Mensaje enviado correctamente");
                             }
                         </script>
-                        <button type="submit" onclick="mensajeEnviado()" class="btn btn-default" style="color:black;">Enviar datos</button>
+                        <button type="submit" onclick="mensajeEnviado()" class="btn btn-primary" style="color:black;">Enviar datos</button>
                     </form>
                 </div>
             </div>

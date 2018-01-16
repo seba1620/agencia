@@ -26,9 +26,9 @@
 }
 /* Index View */
 
-#title:hover{
-    font-size:120px;
-    color:white;
+#titulo:hover{
+    /*font-size:120px;*/    
+    border-color:white;
 }
 
 .modal-header{
@@ -156,4 +156,8 @@ footer{
 
 textarea{
     resize:none;
+}
+#formTexto {
+ height:120px;
+    width:60px;
 }
