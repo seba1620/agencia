@@ -97,6 +97,14 @@ hr.custom-style {
       background-size: cover;
 }
 
+#bg-header-canarias {
+      background-image: url(../images/canarias/header-bg.jpg);
+      height: 40%;
+      padding-top: 360px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
 /* Destination Design */
 
 .destination-bg-section {
@@ -139,6 +147,16 @@ hr.custom-style {
 /* Video section */
 .video-bg-section {
   background-image: url(../images/bahamas/video-bg.jpg);
+  height: 30%;
+  padding-top: 50px;
+  padding-left: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video-bg-section-canarias {
+  background-image: url(../images/canarias/video-bg.jpg);
   height: 30%;
   padding-top: 50px;
   padding-left: 150px;
