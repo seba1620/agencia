@@ -69,6 +69,14 @@
     border-color:white;
 }
 
+.contact{
+    margin-top:150px;
+}
+
+.contact span{
+    font-size:18px;
+}
+
 /* ============= Destination view =======================*/
 hr.custom-style {
     display: block;
