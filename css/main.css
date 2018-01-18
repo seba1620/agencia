@@ -105,6 +105,15 @@ hr.custom-style {
       background-repeat: no-repeat;
       background-size: cover;
 }
+
+#bg-header-miami {
+      background-image: url(../images/miami/header-bg.jpg);
+      height: 40%;
+      padding-top: 360px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
 /* Destination Design */
 
 .destination-bg-section {
@@ -164,6 +173,17 @@ hr.custom-style {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.video-bg-section-canarias {
+  background-image: url(../images/miami/video-bg.jpg);
+  height: 30%;
+  padding-top: 50px;
+  padding-left: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .embed-container {
   position: relative;
