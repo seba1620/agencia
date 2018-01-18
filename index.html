@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title> Principal: </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -27,153 +27,207 @@
 
     </head>
     <body>
-        <video id="mivideo" autoplay="autoplay" loop="loop" preload="auto">
+        <video controls muted id="mivideo" autoplay="autoplay" loop="loop" preload="auto">
             <source src="videos/AirplaneFootage.mp4" type="video/ogg">
         </video>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="contacto.html">Contáctanos</a>
-           <a class="navbar-brand" href="#">Promociones</a>
-            <a class="navbar-brand" href="#">Nuevos Viajes</a>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+              <a class="navbar-brand" href="index.html">Principal</a>
+            <a class="navbar-brand" href="contacto.html">Contáctanos</a>
+             <a class="navbar-brand" href="sobre-nosotros.html">Sobre Nosotros</a>
+              <a class="navbar-brand" href="services.html">Servicios</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" role="form">
+              <div class="form-group">
+                <input type="text" placeholder="Email" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="Password" class="form-control">
+              </div>
+              <button type="submit" class="btn btn-success">Sign in</button>
+            </form>
+          </div><!--/.navbar-collapse -->
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+      </nav>
+
+
+        <div class="container container-small" style="background-color:white;">
+            <header>
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="slider/1.jpg"  alt="1">
+                  </div>
+
+                  <div class="item">
+                    <img src="slider/2.jpg" alt="2">
+                  </div>
+
+                  <div class="item">
+                    <img src="slider/3.jpg" alt="3">
+                  </div>
+
+                  <div class="item">
+                    <img src="slider/4.jpg" alt="4">
+                  </div>
+                </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
+        </header>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron" id="header">
-      <div class="container">
-        <h1 id="titulo" style="color:red;font-weight:bolder; ">Compra tu viaje!</h1>
-        <p style="color:red; font-weight:bolder;">En esta página podrás solicitar tu viaje más deseado.</p>
-        <p>
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal">
-            Registrarse
-          </button>
-        </p>
-      </div>
-    </div>
+            <section id="itinerary">
+                <div class="row">
+                  <div class="container" style="text-align:center">
+                    <h1 id="titulo" style="color:red;font-weight:bolder; ">Compra tu viaje!</h1>
+                    <p style="color:red; font-weight:bolder;">En esta página podrás solicitar tu viaje más deseado.</p>
+                    <p>
+                      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal">
+                        Registrarse
+                      </button>
+                    </p>
+                  </div>
+                </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2 class="titulos">Las bahamas</h2>
-          <img src="images/the-bahamas.jpg" style="width:300px;" alt="Bahamas">
-          <p><a class="btn btn-default" href="bahamas.html" role="button">Ver detalles &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2 class="titulos">Islas canarias</h2>
-          <img src="images/islascanarias.jpg" style="width:300px;height:168.49px;" alt="Islas Canarias">
-          <p><a class="btn btn-default" href="canarias.html" role="button">Ver detalles &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2 class="titulos">Miami</h2>
-          <img src="images/miami.jpg" style="width:300px;" alt="Miami">
-          <p><a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a></p>
-        </div>
-      </div>
+                <div class="row video-bg-section-nosotros">
 
-      <hr>
-      <section id="modal">
-        <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          	<div class="modal-dialog" role="document">
-          		<div class="modal-content">
-          			<div class="modal-header">
-          				<button type="button" class="close cruz" data-dismiss="modal" aria-label="Close">
-          					<span aria-hidden="true">&times;</span>
-          				</button>
-          				<h4 class="modal-title" id="myModalLabel">Formulario de Registro</h4>
-          			</div>
-          			<div class="modal-body">
 
-                  <form class="form-horizontal" action="/action_page.php">
-                    <div class="form-group">
-                      <label class="control-label col-sm-2" for="name">Nombre:</label>
+                </div>
 
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="nombre" placeholder="Introduzca su Nombre" name="name">
-                      </div>
+                <div class="row discover-bg-section" style="text-align:center;">
+
+                    <div class="col-md-4">
+                      <h2 class="titulos">Las bahamas</h2>
+                      <img src="images/the-bahamas.jpg" style="width:300px;" alt="Bahamas">
+                      <p><a class="btn btn-default" href="bahamas.html" role="button">Ver detalles &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                      <h2 class="titulos">Islas canarias</h2>
+                      <img src="images/islascanarias.jpg" style="width:300px;height:168.49px;" alt="Islas Canarias">
+                      <p><a class="btn btn-default" href="canarias.html" role="button">Ver detalles &raquo;</a></p>
+                   </div>
+                    <div class="col-md-4">
+                      <h2 class="titulos">Miami</h2>
+                      <img src="images/miami.jpg" style="width:300px;" alt="Miami">
+                      <p><a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a></p>
                     </div>
 
-                    <div class="form-group">
-                      <label class="control-label col-sm-2" for="surname">Apellidos:</label>
+                </div>
 
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="apellido" placeholder="Introduzca sus Apellidos" name="surname">
+
+                <section id="modal">
+                  <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close cruz" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Formulario de Registro</h4>
+                          </div>
+                          <div class="modal-body">
+
+                            <form class="form-horizontal" action="/action_page.php">
+                              <div class="form-group">
+                                <label class="control-label col-sm-2" for="name">Nombre:</label>
+
+                                <div class="col-sm-10">
+                                  <input type="email" class="form-control" id="nombre" placeholder="Introduzca su Nombre" name="name">
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label class="control-label col-sm-2" for="surname">Apellidos:</label>
+
+                                <div class="col-sm-10">
+                                  <input type="email" class="form-control" id="apellido" placeholder="Introduzca sus Apellidos" name="surname">
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label class="control-label col-sm-2" for="personal-id">DNI:</label>
+
+                                <div class="col-sm-10">
+                                  <input type="email" class="form-control" id="dni" placeholder="Introduzca su DNI" name="personal-id">
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label class="control-label col-sm-2" for="personal-id">Dirección:</label>
+
+                                <div class="col-sm-10">
+                                  <input type="email" class="form-control" id="direccion" placeholder="Introduzca su Dirección" name="address">
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label class="control-label col-sm-2" for="email">Email:</label>
+
+                                <div class="col-sm-10">
+                                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label class="control-label col-sm-2" for="pwd">Contraseña:</label>
+                                <div class="col-sm-10">
+                                  <input type="password" class="form-control" id="pwd" placeholder="Introduzca su Contraseña" name="pwd">
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                  <script>
+                                      function registroOk(){
+                                          window.alert("Registro OK");
+                                      }
+                                  </script>
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button onclick="registroOk()" type="submit" class="btn btn-success">Registrarse</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
                       </div>
+                  </div>
+                </section>
+
+                <footer>
+                    <div class="row">
+                        <div class="container">
+                            <p style="border-radius: length ;"><a href="#">Empresa Dani y Seba.</a> &copy; Company 2018</p>
+                        </div>
                     </div>
-
-                    <div class="form-group">
-                      <label class="control-label col-sm-2" for="personal-id">DNI:</label>
-
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="dni" placeholder="Introduzca su DNI" name="personal-id">
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <label class="control-label col-sm-2" for="personal-id">Dirección:</label>
-
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="direccion" placeholder="Introduzca su Dirección" name="address">
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <label class="control-label col-sm-2" for="email">Email:</label>
-
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <label class="control-label col-sm-2" for="pwd">Contraseña:</label>
-                      <div class="col-sm-10">
-                        <input type="password" class="form-control" id="pwd" placeholder="Introduzca su Contraseña" name="pwd">
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                        <script>
-                            function registroOk(){
-                                window.alert("Registro OK");
-                            }
-                        </script>
-                      <div class="col-sm-offset-2 col-sm-10">
-                          <button onclick="registroOk()" type="submit" class="btn btn-success">Registrarse</button>
-                      </div>
-                    </div>
-                  </form>
-          			</div>
-          		</div>
-          	</div>
-        </div>
-      </section>
-      <footer>
-        <p style="border-radius: length;">Empresa Dani y Seba. &copy; Company 2018</p>
-      </footer>
-    </div> <!-- /container -->
+                </footer>
+        </div> <!-- /container -->
         <script src="js/main.js"></script>
     </body>
 </html>
