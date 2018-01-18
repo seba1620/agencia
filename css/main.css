@@ -123,6 +123,15 @@ hr.custom-style {
       background-repeat: no-repeat;
       background-size: cover;
 }
+
+#bg-header-servicios {
+      background-image: url(../images/header-services.jpg);
+      height: 50%;
+      padding-top: 360px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
 /* Destination Design */
 
 .destination-bg-section {
