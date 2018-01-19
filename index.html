@@ -23,16 +23,20 @@
 
         <script src="https://use.fontawesome.com/2217b4d91a.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                    $("#itinerary").hide();
-                    $("#itinerary").fadeIn(2000);
-                    $("#fade-destinos").hide();
-                    $("#fade-destinos").fadeIn(3000);
-                });
+        <script src="js/main.js"></script>
 
+        <script>
+            $(document).ready(function () {
+                $("#itinerary").hide();
+                $("#fade-destinos").hide();
+                $("#itinerary").fadeIn(2000);
+                $("#fade-destinos").fadeIn(3000);
+
+                video();
+            });
         </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     </head>
     <body>
         <video controls muted id="mivideo" autoplay="autoplay" loop="loop" preload="auto">
@@ -41,88 +45,89 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-              <a class="navbar-brand" href="index.html">Principal</a>
-            <a class="navbar-brand" href="contacto.html">Contáctanos</a>
-             <a class="navbar-brand" href="sobre-nosotros.html">Sobre Nosotros</a>
-              <a class="navbar-brand" href="services.html">Servicios</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right" role="form">
-              <div class="form-group">
-                <input type="text" placeholder="Email" class="form-control">
-              </div>
-              <div class="form-group">
-                <input type="password" placeholder="Password" class="form-control">
-              </div>
-              <button type="submit" class="btn btn-success">Sign in</button>
-            </form>
-          </div><!--/.navbar-collapse -->
-        </div>
-      </nav>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#">Empresa Dani y Seba</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+
+                        <li>
+                            <a class="active" href="index.html">Principal</a>
+
+                        </li>
+                        <li><a href="contacto.html">Contáctanos</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
 
         <div class="container container-small" style="background-color:white;">
             <header>
-              <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                </ol>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="slider/1.jpg"  alt="1">
-                  </div>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="slider/1.jpg"  alt="1">
+                        </div>
 
-                  <div class="item">
-                    <img src="slider/2.jpg" alt="2">
-                  </div>
+                        <div class="item">
+                            <img src="slider/2.jpg" alt="2">
+                        </div>
 
-                  <div class="item">
-                    <img src="slider/3.jpg" alt="3">
-                  </div>
+                        <div class="item">
+                            <img src="slider/3.jpg" alt="3">
+                        </div>
 
-                  <div class="item">
-                    <img src="slider/4.jpg" alt="4">
-                  </div>
+                        <div class="item">
+                            <img src="slider/4.jpg" alt="4">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-
-              <!-- Left and right controls -->
-              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-        </header>
+            </header>
 
             <section id="itinerary">
                 <div class="row">
-                  <div class="col-md-12" style="text-align:center">
-                    <h1  style="font-weight:bolder; ">Compra tu viaje!</h1>
-                    <p style="font-weight:bolder;">En esta página podrás solicitar tu viaje más deseado.</p>
-                    <p>
-                      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal">
-                        Registrarse
-                      </button>
-                    </p>
-                  </div>
+                    <div class="col-md-12" style="text-align:center">
+                        <h1  style="font-weight:bolder; ">Compra tu viaje!</h1>
+                        <p style="font-weight:bolder;">En esta página podrás solicitar tu viaje más deseado.</p>
+                        <p>
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal">
+                                Registrarse
+                            </button>
+                        </p>
+                    </div>
                 </div>
 
                 <div class="row video-bg-section-nosotros">
@@ -133,99 +138,99 @@
                 <div id="fade-destinos" class="row discover-bg-section" style="text-align:center;">
 
                     <div class="col-md-4">
-                      <h2>Las bahamas</h2>
-                      <img src="images/the-bahamas.jpg" style="width:300px;" alt="Bahamas">
-                      <p><a class="btn btn-default" href="bahamas.html" role="button">Ver detalles &raquo;</a></p>
+                        <h2>Las bahamas</h2>
+                        <img src="images/the-bahamas.jpg" style="width:300px;" alt="Bahamas">
+                        <p><a class="btn btn-default" href="bahamas.html" role="button">Ver detalles &raquo;</a></p>
                     </div>
                     <div class="col-md-4">
-                      <h2 >Islas canarias</h2>
-                      <img src="images/islascanarias.jpg" style="width:300px;height:168.49px;" alt="Islas Canarias">
-                      <p><a class="btn btn-default" href="canarias.html" role="button">Ver detalles &raquo;</a></p>
-                   </div>
+                        <h2 >Islas canarias</h2>
+                        <img src="images/islascanarias.jpg" style="width:300px;height:168.49px;" alt="Islas Canarias">
+                        <p><a class="btn btn-default" href="canarias.html" role="button">Ver detalles &raquo;</a></p>
+                    </div>
                     <div class="col-md-4">
-                      <h2>Miami</h2>
-                      <img src="images/miami.jpg" style="width:300px;" alt="Miami">
-                      <p><a class="btn btn-default" href="miami.html" role="button">Ver detalles &raquo;</a></p>
+                        <h2>Miami</h2>
+                        <img src="images/miami.jpg" style="width:300px;" alt="Miami">
+                        <p><a class="btn btn-default" href="miami.html" role="button">Ver detalles &raquo;</a></p>
                     </div>
 
                 </div>
 
 
                 <section id="modal">
-                  <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close cruz" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">Formulario de Registro</h4>
-                          </div>
-                          <div class="modal-body">
-
-                            <form class="form-horizontal" action="/action_page.php">
-                              <div class="form-group">
-                                <label class="control-label col-sm-2" for="name">Nombre:</label>
-
-                                <div class="col-sm-10">
-                                  <input type="email" class="form-control" id="nombre" placeholder="Introduzca su Nombre" name="name">
+                    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close cruz" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel">Formulario de Registro</h4>
                                 </div>
-                              </div>
+                                <div class="modal-body">
 
-                              <div class="form-group">
-                                <label class="control-label col-sm-2" for="surname">Apellidos:</label>
+                                    <form class="form-horizontal" action="/action_page.php">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="name">Nombre:</label>
 
-                                <div class="col-sm-10">
-                                  <input type="email" class="form-control" id="apellido" placeholder="Introduzca sus Apellidos" name="surname">
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="nombre" placeholder="Introduzca su Nombre" name="name">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="surname">Apellidos:</label>
+
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="apellido" placeholder="Introduzca sus Apellidos" name="surname">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="personal-id">DNI:</label>
+
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="dni" placeholder="Introduzca su DNI" name="personal-id">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="personal-id">Dirección:</label>
+
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="direccion" placeholder="Introduzca su Dirección" name="address">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="email">Email:</label>
+
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="pwd">Contraseña:</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" id="pwd" placeholder="Introduzca su Contraseña" name="pwd">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <script>
+                      function registroOk() {
+                          window.alert("Registro OK");
+                      }
+                                            </script>
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                                <button onclick="registroOk()" type="submit" class="btn btn-success">Registrarse</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                              </div>
-
-                              <div class="form-group">
-                                <label class="control-label col-sm-2" for="personal-id">DNI:</label>
-
-                                <div class="col-sm-10">
-                                  <input type="email" class="form-control" id="dni" placeholder="Introduzca su DNI" name="personal-id">
-                                </div>
-                              </div>
-
-                              <div class="form-group">
-                                <label class="control-label col-sm-2" for="personal-id">Dirección:</label>
-
-                                <div class="col-sm-10">
-                                  <input type="email" class="form-control" id="direccion" placeholder="Introduzca su Dirección" name="address">
-                                </div>
-                              </div>
-
-                              <div class="form-group">
-                                <label class="control-label col-sm-2" for="email">Email:</label>
-
-                                <div class="col-sm-10">
-                                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                                </div>
-                              </div>
-
-                              <div class="form-group">
-                                <label class="control-label col-sm-2" for="pwd">Contraseña:</label>
-                                <div class="col-sm-10">
-                                  <input type="password" class="form-control" id="pwd" placeholder="Introduzca su Contraseña" name="pwd">
-                                </div>
-                              </div>
-
-                              <div class="form-group">
-                                  <script>
-                                      function registroOk(){
-                                          window.alert("Registro OK");
-                                      }
-                                  </script>
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <button onclick="registroOk()" type="submit" class="btn btn-success">Registrarse</button>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
+                            </div>
                         </div>
-                      </div>
-                  </div>
+                    </div>
                 </section>
 
                 <footer>
