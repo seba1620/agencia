@@ -24,7 +24,15 @@
         <script src="https://use.fontawesome.com/2217b4d91a.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                    $("#itinerary").hide();
+                    $("#itinerary").fadeIn(2000);
+                    $("#fade-destinos").hide();
+                    $("#fade-destinos").fadeIn(3000);
+                });
 
+        </script>
     </head>
     <body>
         <video controls muted id="mivideo" autoplay="autoplay" loop="loop" preload="auto">
@@ -122,7 +130,7 @@
 
                 </div>
 
-                <div class="row discover-bg-section" style="text-align:center;">
+                <div id="fade-destinos" class="row discover-bg-section" style="text-align:center;">
 
                     <div class="col-md-4">
                       <h2>Las bahamas</h2>
